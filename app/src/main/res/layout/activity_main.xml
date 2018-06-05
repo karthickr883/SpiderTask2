@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/black"
+    tools:context="com.example.karthik.spider2.MainActivity">
+
+    <Button
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1CB9F2"
+        android:text="Start game" />
+
+    <LinearLayout
+        android:id="@+id/words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/currentScore"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/game"
+        android:layout_toStartOf="@+id/game"
+        android:ems="10"
+        android:hint="Enter alphabet"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guess"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FF82AB"
+        android:text="Check the guess" />
+
+    <TextView
+        android:id="@+id/guessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Incorect guesses:"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/currentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/guessed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/guessed"
+        android:layout_marginBottom="42dp"
+        android:text="Current Score :"
+        android:textColor="#5E5E5E"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currentScore"
+        android:layout_toEndOf="@+id/game"
+        android:layout_toRightOf="@+id/game"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/hangman"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp" />
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#00FA9A"
+        android:text="New Game" />
+</RelativeLayout>
